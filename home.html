@@ -1,11 +1,95 @@
 <html>
 <head>
-    <title>Home</title>
+    <title>iStore-Home</title>
     <script>
+
     </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+	<div class="navbar">
+  	<!--<div class="dropdown">
+    <button class="dropbtn">SHOP ONLINE 
+      
+    </button>
+    	<div class="dropdown-content">
+      		<a href="file:///Users/karanrajmokan/Desktop/package/fruits&veges.html">FRUITS & VEGETABLES</a> 
+      		<a href="file:///Users/karanrajmokan/Desktop/package/delicate&cheese.html">DELICATESSEN & CHEESE</a>
+      		<a href="file:///Users/karanrajmokan/Desktop/package/indian_groceries.html">INDIAN GROCERY</a>
+      		<a href="file:///Users/karanrajmokan/Desktop/package/eggs&meat.html">EGGS & MEATS</a>
+      		<a href="file:///Users/karanrajmokan/Desktop/package/snacks.html">SNACKS & BEVERAGES</a>
+    	</div>
+  	</div>--> 
+  		<img id="home_logo" src="apple-logo.jpeg">
+   		<a href="file:///Users/karanrajmokan/Desktop/package/favourites.html">Mac</a>
+  		<a href="file:///Users/karanrajmokan/Desktop/package/offers.html">iPad</a>
+  		<a href="file:///Users/karanrajmokan/Desktop/package/recipes.html">iPhone</a>
+  		<a href="file:///Users/karanrajmokan/Desktop/package/events.html">Watch</a>
+   		<a href="file:///Users/karanrajmokan/Desktop/package/blog.html">TV</a>
+   		<a href="file:///Users/karanrajmokan/Desktop/package/blog.html">Music</a>
+
+</div>
+<br>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="new_new.jpg" style="width:142.5%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="new_new1.jpg" style="width:142.5%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="new_new2.jpg" style="width:142.5%">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<br>
+<br>
+
+</body>
+<br>
+<div class="footer">
+  Copyright &copy 2018
+</div>
 </body>
 
 </html>
