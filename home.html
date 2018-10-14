@@ -10,18 +10,19 @@
 <body>
 	<div class="navbar">
   	<!--<div class="dropdown">
-    <button class="dropbtn">SHOP ONLINE 
-      
+    <button class="dropbtn">SHOP ONLINE
+
     </button>
     	<div class="dropdown-content">
-      		<a href="file:///Users/karanrajmokan/Desktop/package/fruits&veges.html">FRUITS & VEGETABLES</a> 
+      		<a href="file:///Users/karanrajmokan/Desktop/package/fruits&veges.html">FRUITS & VEGETABLES</a>
       		<a href="file:///Users/karanrajmokan/Desktop/package/delicate&cheese.html">DELICATESSEN & CHEESE</a>
       		<a href="file:///Users/karanrajmokan/Desktop/package/indian_groceries.html">INDIAN GROCERY</a>
       		<a href="file:///Users/karanrajmokan/Desktop/package/eggs&meat.html">EGGS & MEATS</a>
       		<a href="file:///Users/karanrajmokan/Desktop/package/snacks.html">SNACKS & BEVERAGES</a>
     	</div>
-  	</div>--> 
-  		<img id="home_logo" src="apple-logo.jpeg">
+  	</div>-->
+        <!--<h1 style="color: transparent;font-size: 10px;width: 10px;"></h1>-->
+  		<img id="home_logo" src="apple-logo.png">
    		<a href="file:///Users/karanrajmokan/Desktop/package/favourites.html">Mac</a>
   		<a href="file:///Users/karanrajmokan/Desktop/package/offers.html">iPad</a>
   		<a href="file:///Users/karanrajmokan/Desktop/package/recipes.html">iPhone</a>
@@ -32,23 +33,23 @@
 </div>
 <br>
 
-<div class="slideshow-container">
+<!--<div class="slideshow-container">
 
 <div class="mySlides fade">
   <div class="numbertext"></div>
-  <img src="new_new.jpg" style="width:142.5%">
+  <img src="new_new.jpg" style="width:100%">
   <div class="text"></div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext"></div>
-  <img src="new_new1.jpg" style="width:142.5%">
+  <img src="new_new1.jpg" style="width:100%">
   <div class="text"></div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext"></div>
-  <img src="new_new2.jpg" style="width:142.5%">
+  <img src="new_new2.jpg" style="width:100%">
   <div class="text"></div>
 </div>
 
@@ -56,10 +57,10 @@
 <br>
 
 <div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>-->
 
 <script>
 var slideIndex = 0;
@@ -70,14 +71,14 @@ function showSlides() {
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
     for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
+       slides[i].style.display = "none";
     }
     slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
+    if (slideIndex > slides.length) {slideIndex = 1}
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";  
+    slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
