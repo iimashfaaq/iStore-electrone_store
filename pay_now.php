@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+
 <html>
+
 <head>
 <meta charset="utf-8">
 <title>iStore - Sign Up</title>
@@ -106,88 +107,17 @@ a {
         </nav>
         <!-- /.navbar-collapse -->
       </div>
+          <form action="pay_now_confirm.php" name="my_form1" style="margin-top: 40px;" method="post">
+            <div class="container">
+              <h1>For purchase :</h1>
+              <br>
+              <label for="cvv"><b>CVV :</b></label>
+              <input type="text" placeholder="Enter CVV..." name="cvv" required>
 
-      <form action="http://localhost:8888/iStore-electrone_store/registration.php" name="my_form" style="margin-top: 40px;" method="post">
-        <div class="container">
-          <h1>Register</h1>
-          <p>Please fill in this form to create an account.</p>
-          <hr>
+              <button type="submit" class="registerbtn">Confirm</button>
+            </div>
+          </form>
 
-          <label for="fname"><b>First name</b></label>
-          <input type="text" placeholder="Enter first name" name="fname" required>
-
-          <label for="lname"><b>Last name</b></label>
-          <input type="text" placeholder="Enter last name" name="lname" required>
-
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email_id" onchange="validateEmail(document.my_form.email_id);"required>
-
-          <label for="shipping"><b>City</b></label>
-          <input type="text" placeholder="Enter City" name="addr" required>
-
-          <label for="phone"><b>Phone number</b></label>
-          <input type="text" placeholder="Enter phone number" name="phone" required>
-
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psword" required>
-
-          <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="con_psword" oninput="check_pass();" required>
-          <p id="confirm_pword"></p><br>
-
-          <label for="accno"><b>Account No</b></label>
-          <input type="text" placeholder="Enter Account no" name="acc_no" required>
-
-          <label for="cvv"><b>CVV</b></label>
-          <input type="text" placeholder="Enter CVV" name="cvv" required>
-
-          <label for="ctype"><b>Card type</b></label>
-          <input type="text" placeholder="Enter Card type" name="c_type" required>
-
-          <label for="vdate"><b>Expiry date</b></label>
-          <input type="text" placeholder="Enter expiry date" name="v_date" required>
-
-          <hr>
-          <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-
-          <button type="submit" class="registerbtn">Register</button>
-        </div>
-
-        <div class="container signin">
-          <p>Already have an account? <a href="#">Sign in</a>.</p>
-        </div>
-      </form>
-
-    <script>
-    function validateEmail(emailinput)
-    {
-        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-       if(emailinput.value.match(mailformat))
-       {
-           document.my_form.phone.focus();
-           return true;
-       }
-       else
-       {
-           alert("You have entered an invalid email address!");
-           document.my_form.emailid.focus();
-           return false;
-       }
-    }
-
-    function check_pass() {
-        if(my_form.psword.value == my_form.con_psword.value)
-        {
-            document.getElementById("confirm_pword").innerHTML = "Passwords match !";
-            return true;
-        }
-        else{
-            document.getElementById("confirm_pword").innerHTML = "Your passwords don't match !";
-            return false;
-        }
-    }
-
-    </script>
-
+      </div>
 </body>
 </html>
